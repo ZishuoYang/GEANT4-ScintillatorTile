@@ -1,0 +1,5 @@
+/process/setVerbose 0
+/SimLY/SetShielding true
+/SimLY/Update
+/run/beamOn 100         
+

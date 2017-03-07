@@ -1,0 +1,5 @@
+/tracking/verbose 1
+/gun/particle opticalphoton
+/gun/energy 3 eV
+/gun/position 2 2 0 mm
+/gun/direction 1 2 -1

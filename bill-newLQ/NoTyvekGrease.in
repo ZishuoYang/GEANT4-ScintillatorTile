@@ -1,0 +1,38 @@
+/process/setVerbose 0
+/LYSim/SetFiberHole false
+/LYSim/SetScintThickness 3. mm
+/LYSim/SetRefIndex 1.4
+/LYSim/SetWrapping false
+/LYSim/Update
+/gps/particle opticalphoton
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/centre 0. 0. 0. mm
+/gps/pos/halfx 12.5 mm
+/gps/pos/halfy 12.5 mm
+/gps/ang/type iso
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/point 3.54e-6 0.00
+/gps/hist/point 3.35e-6 0.26
+/gps/hist/point 3.26e-6 1.26
+/gps/hist/point 3.18e-6 2.14
+/gps/hist/point 3.13e-6 2.20
+/gps/hist/point 3.10e-6 2.16
+/gps/hist/point 3.02e-6 2.04
+/gps/hist/point 2.95e-6 1.90
+/gps/hist/point 2.88e-6 1.64
+/gps/hist/point 2.82e-6 1.30
+/gps/hist/point 2.76e-6 0.90
+/gps/hist/point 2.70e-6 0.62
+/gps/hist/point 2.64e-6 0.38
+/gps/hist/point 2.58e-6 0.26
+/gps/hist/point 2.53e-6 0.14
+/gps/hist/point 2.48e-6 0.10
+/gps/hist/point 2.43e-6 0.08
+/gps/hist/point 2.38e-6 0.06
+/gps/hist/point 2.30e-6 0.04
+/gps/hist/point 2.21e-6 0.02
+/gps/hist/point 2.00e-6 0.00
+/gps/hist/inter Lin
+/run/beamOn 100000

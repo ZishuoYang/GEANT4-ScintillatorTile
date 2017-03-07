@@ -1,6 +1,3 @@
-# GEANT4-ScintillatorTile
-Optical simulation for the liquid scintillator tile (CMS-DN-2015/009). Code adapted from Young Shin's LYSim project. 
-
 Checkout instructions
 ----------------------
 1. Create working area
@@ -12,10 +9,10 @@ git clone git@github.com:ZishuoYang/GEANT4-ScintillatorTile.git
 
 Build and run instructions
 -----------------------------
-1. Create build directory (can rename bill-newLQ/ to be whatever/)
-mkdir bill-newLQ-build (if rename your directory /whaterever/, then do instead: mkdir whatever-build/ )
+1. Create build directory
+mkdir bill-newLQ-build (if renamed your directory /whaterever/, then do instead: mkdir whatever-build/ )
 
-2a. Check out CMSSW (Only required the first time), e.g.
+2a. Check out CMSSW (Only required the first time), e.g. 
 cmsrel CMSSW_4_4_4
 
 2b. cd to SCRAM based area and set up runtime environment, e.g.

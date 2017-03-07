@@ -23,6 +23,7 @@ cd CMSSW_4_4_4/src
 cmsenv
 
 3. Compile the source code (replace "YOUR_NEW_PATH" by your new path to the source code directory)
+-----------------------------
 cd ~/myGeantSpace/bill-newLQ-build
 export G4BASE=/afs/cern.ch/sw/lcg/external/geant4
 source $G4BASE/9.6/x86_64-slc5-gcc43-opt/CMake-setup.sh

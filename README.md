@@ -1,20 +1,19 @@
 # GEANT4-ScintillatorTile
 Optical simulation for the liquid scintillator tile (CMS-DN-2015/009). Code adapted from Young Shin's LYSim project. 
 
-
 Checkout instructions
 ----------------------
 1. Create working area
-mkdir myGeantArea
-cd myGeantArea
+mkdir myGeantSpace
+cd myGeantSpace
 
 2. Checkout source code and copy to working area
-[Git pull] or [scp] /bill-newLQ/
+git clone git@github.com:ZishuoYang/GEANT4-ScintillatorTile.git
 
 Build and run instructions
 -----------------------------
-1. Create build directory
-mkdir bill-newLQ-build (you can rename the source code directory /newname/, but then you should mkdir newname-build/)
+1. Create build directory (can rename bill-newLQ/ to be whatever/)
+mkdir bill-newLQ-build (if rename your directory /whaterever/, then do instead: mkdir whatever-build/ )
 
 2a. Check out CMSSW (Only required the first time), e.g.
 cmsrel CMSSW_4_4_4
@@ -23,11 +22,11 @@ cmsrel CMSSW_4_4_4
 cd CMSSW_4_4_4/src
 cmsenv
 
-3. Compile the source code
-cd ~/myGeantArea/bill-newLQ-build
+3. Compile the source code (replace "YOUR_NEW_PATH" by your new path to the source code directory)
+cd ~/myGeantSpace/bill-newLQ-build
 export G4BASE=/afs/cern.ch/sw/lcg/external/geant4
 source $G4BASE/9.6/x86_64-slc5-gcc43-opt/CMake-setup.sh
-cmake -DWITH_GEANT4_UIVIS=ON -DGeant4_DIR=/afs/cern.ch/sw/lcg/external/geant4/9.6/x86_64-slc5-gcc43-opt/lib64/Geant4-9.6.0/ $HOME/scratcharea/UserCode/YShin/LYSim-LO2
+cmake -DWITH_GEANT4_UIVIS=ON -DGeant4_DIR=/afs/cern.ch/sw/lcg/external/geant4/9.6/x86_64-slc5-gcc43-opt/lib64/Geant4-9.6.0/ $HOME/YOUR_NEW_PATH/bill-newLQ
 make
 
 4a. The following commands executes the input macro files, and pipes the output to the corresponding output files
@@ -39,7 +38,7 @@ Idle> /vis/viewer/set/viewpointThetaPhi 90 0
 Idle> exit
 
 
-See LYSimDetectorConstruction.cc for details on simulation setup, detector geometry and material properties. This is THE file you'll mostly work on.
+See LYSimDetectorConstruction.cc for details on simulation setup, detector geometry and material properties. (This is the file at which you will stare miserably for the most time. And hopefully, eventually modify it anyway you want.)
 
 ================================================================================
 

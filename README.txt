@@ -37,7 +37,7 @@ Idle> /vis/viewer/set/viewpointThetaPhi 90 0
 Idle> exit
 
 
-See LYSimDetectorConstruction.cc for details on simulation setup, detector geometry and material properties
+See LYSimDetectorConstruction.cc for details on simulation setup, detector geometry and material properties. (This is the file at which you will stare miserably for the most time. And hopefully, eventually modify it anyway you want.)
 
 ================================================================================
 

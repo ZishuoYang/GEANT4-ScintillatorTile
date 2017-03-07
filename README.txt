@@ -1,23 +1,18 @@
 ================================================================================
-The following instructions are for the lxplus cluster at CERN.
-IMPORTANT: Use lxplus5.cern.ch to access SL5 nodes.
-
 
 Checkout instructions
 ----------------------
 1. Create working area
-mkdir scratcharea
-cd scratcharea
+mkdir myGeantSpace
+cd myGeantSpace
 
 2. Checkout source code and copy to working area
-cvs co UserCode/YShin/LYSim-LO2
-cp -r UserCode/YShin/LYSim-LO2 LYSim-LO2
-
+git clone git@github.com:ZishuoYang/GEANT4-ScintillatorTile.git
 
 Build and run instructions
 -----------------------------
 1. Create build directory
-mkdir LYSim-LO2-build
+mkdir bill-newLQ-build (if renamed your directory /whaterever/, then do instead: mkdir whatever-build/)
 
 2a. Check out CMSSW (Only required the first time), e.g.
 cmsrel CMSSW_4_4_4
@@ -26,11 +21,11 @@ cmsrel CMSSW_4_4_4
 cd CMSSW_4_4_4/src
 cmsenv
 
-3. Compile the source code
-cd ~/scratcharea/LYSim-LO2-build
+3. Compile the source code (replace with your file path after "$HOME")
+cd ~/myGeantSpace/bill-newLQ-build
 export G4BASE=/afs/cern.ch/sw/lcg/external/geant4
 source $G4BASE/9.6/x86_64-slc5-gcc43-opt/CMake-setup.sh
-cmake -DWITH_GEANT4_UIVIS=ON -DGeant4_DIR=/afs/cern.ch/sw/lcg/external/geant4/9.6/x86_64-slc5-gcc43-opt/lib64/Geant4-9.6.0/ $HOME/scratcharea/UserCode/YShin/LYSim-LO2
+cmake -DWITH_GEANT4_UIVIS=ON -DGeant4_DIR=/afs/cern.ch/sw/lcg/external/geant4/9.6/x86_64-slc5-gcc43-opt/lib64/Geant4-9.6.0/ $HOME/myGeantSpace/bill-newLQ
 make
 
 4a. The following commands executes the input macro files, and pipes the output to the corresponding output files
